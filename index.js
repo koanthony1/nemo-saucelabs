@@ -10,7 +10,7 @@ module.exports = {
         /** @namespace that.props.serverCaps */
         var options = {
             username: result.props.serverCaps.username,
-            access_key: result.props.serverCaps.accessKey,
+            accessKey: result.props.serverCaps.accessKey,
             driver: result.driver
         };
 

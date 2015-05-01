@@ -9,7 +9,7 @@ Add dependencies to package.json and install.
 ```javascript
 	...
     "nemo": "^0.4.0",
-    "nemo-saucelabs": "^0.1.0",
+    "nemo-saucelabs": "^0.1.2",
 	...
 ```
 
@@ -28,13 +28,17 @@ Add nemo-saucelabs to your `config/nemo-plugins.json` file.
 }
 ```
 
-Define saucalabs `username` and `access_key` to the config object and register the plugin
+Define saucalabs `username` and `accessKey` to the config.json under `serverCaps` and register the plugin
 
 ```javascript
-{
-    username: config.serverCaps.username,
-    access_key: config.serverCaps.accessKey,
-}
+"serverCaps": {
+    "username": "shop",
+    "accessKey": "ei930kff-308c-49KK-6372-cfe251be-3j23", //not a real accessKey
+    "sauceLabsRestApiUrl": " https://saucelabs.com/rest/v1/shop/jobs/",
+    "idle-timeout": 300,
+    "platform": "MAC",
+    "version": "27.0"
+  },
 ```
 
 ### Details
